@@ -34,12 +34,12 @@ See twig file for more blocks, which allow customization of HTML tags, CSS class
 ```twig
 {% embed '@Tabler/embeds/modal.html.twig' with {id: 'no-close', close: false} %}
     {% block modal_title 'A modal example' %}
-    {% block modal_size 'modal_sm' %}
+    {% block modal_size 'modal-sm' %}
     {% block modal_body %}Foo Bar{% endblock %}
 {% endembed %}
 
 {% embed '@Tabler/embeds/modal.html.twig' with {id: 'status', status: 'success', header: false} %}
-    {% block modal_size 'modal_sm' %}
+    {% block modal_size 'modal-sm' %}
     {% block modal_body %}
         <div class="text-center">
             <i class="fas fa-check fa-3x mb-3 text-success"></i>
